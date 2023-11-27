@@ -1,0 +1,26 @@
+import {ADD_PRODUCT,GET_PRODUCT,DELETE_PRODUCT,UPDATE_PRODUCT} from '../Constants'
+
+export function getProduct(){
+    return {
+        type:GET_PRODUCT
+        
+    }
+}
+export function addProduct(data){
+    return {
+        type:ADD_PRODUCT,
+        payload:data
+    }
+}
+export function deleteProduct(data){
+    return {
+        type:DELETE_PRODUCT,
+        payload:data
+    }
+}
+export function updateProduct(data){
+    return {
+        type:UPDATE_PRODUCT,
+        payload:data
+    }
+}
